@@ -29,16 +29,20 @@ body{
     background-color:#f0f8ff;
 }
 .button{
+    transition:all 0.4s ease 0s;
     height: 32px;
     width: 112px;
     border: none;
     border-radius: 7px;
     cursor:pointer;
     margin:20px
+    
+    
 }
 .button:hover{
     background-color:black;
     color:white;
+    transform:translateY(-15px);
 }
 section{
       
@@ -107,9 +111,11 @@ footer{
     bottom: opx;
     bottom: 12px;
     right: 10px;
+    transition: all 0.4s ease 0s;
 }
 .top:hover{
     background-color:rgb(19, 125, 125);
+    transform:translateY(-10px);
 }
 a{
     text-decoration: none;
