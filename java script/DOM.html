@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .green{
+             font-size:2rem;
+            text-align:center;
+            justify
+            
+        }
+    </style>
+</head>
+<body>
+  <form action="">
+
+    <lable for="male">
+      male:
+    </lable>
+    <input type="checkbox" id="male" value="male">
+    <button type="submit">submit</button>
+  </form>
+    <h1 id="head">hello world</h1>
+    <img id="potti" src="" alt="this is my image">
+    <h2 id="p">prashu</h2>
+    <h3 id="pamu">both of me silent present situation</h3>
+          <script>
+                // MODIFYING DOM ELEMENTS
+
+                var head=document.getElementById("head");
+        head.textContent="prashu";
+        potti.setAttribute("alt","image");
+        var pp=document.getElementById("p");
+        pp.textContent="potti";
+        var pamu=document.getElementById("pamu");
+        pamu.style.color="red";
+
+            // CREATING AND DELETING ELEMENTS
+            
+             const n=document.createElement("p");
+             document.body.appendChild(n);
+             const p = document.createElement("h4");
+             document.body.appendChild(p);
+             n.innerHTML="java script";
+             p.textContent="chumma chummaaa";
+             n.style.color=" blue";
+               const s = document.createElement("h1");
+               document.body.appendChild(s);
+               s.textContent="prashu";
+               var a = document.createElement("style");
+               document.head.appendChild(a);
+            
+
+                  // EVENT HANDLING
+
+                  
+                  s.addEventListener("mouseover",function(){
+                    s.style.color="red";
+                  })
+                  // p.addEventListener("click",function(){
+                  //   alert("element clicked !");
+                  // })
+
+                   // TRAVERSING THE DOM
+
+
+                const element=document.createElement("h5");
+                document.body.appendChild(element);
+                element.innerHTML="gayatri";
+                element.parentElement.removeChild(element);
+
+                   // MANIPULATING CSS CLASSES
+
+                p.classList.add("green");
+
+                         // remove css 
+
+             p.addEventListener("mouseout",function(){
+                p.classList.remove("green");
+                p.style.color="pink";
+             }
+            )
+
+            const maleInput = document.getElementById("male");
+            const button= document.getElementById("submit");
+            button.addEventListener("click", function(){
+              alert("submit");
+            }
+            
+            )
+
+
+
+
+
+
+          </script>
+</body>
+</html> 
